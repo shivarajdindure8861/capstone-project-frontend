@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Income
+          </div>
+          <div class="card-body">
+            <canvas id="incomeChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Expense
+          </div>
+          <div class="card-body">
+            <canvas id="expenseChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <button class="btn btn-info btn-block" onclick="showIncome()">Income</button>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-danger btn-block" onclick="showExpense()">Expense</button>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <button class="btn btn-success btn-block" onclick="showTotal()">Total Balance</button>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-primary btn-block" onclick="showRecent()">Recent Activities</button>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            Recent Activities
+          </div>
+          <div class="card-body">
+            <ul id="recentList">
+              <li>Received $500 from John Smith</li>
+              <li>Spent $100 on groceries</li>
+              <li>Received $1000 from ABC Corp</li>
+              <li>Spent $50 on gas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
