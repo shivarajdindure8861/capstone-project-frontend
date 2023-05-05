@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="app.css">
     <style>
-        body {
-            background-image: url('https://img.freepik.com/free-vector/pay-balance-owed-abstract-concept-illustration-making-credit-payment-pay-owed-money-bank-irs-balance-due-debt-consolidation-management-taxpayer-bill_335657-1236.jpg?w=740&t=st=1683279614~exp=1683280214~hmac=564d4a5cd2003185cdd1beb08948d8f62563675f3e74eff64833fd36a9c2ef34');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+        
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body>
@@ -30,25 +27,39 @@
                         <a class="nav-link active" aria-current="page" href="C:\Users\Shivakumar\capstone project\capstone-project-frontend\finance\index.html">Add Income/Expense</a>
                     </li>
                     <li class="nav-item ms-10">
-                        <a class="nav-link" href="./viewAllEvents.html" id="events">View Transactions</a>
+                        <a class="nav-link" href="C:\Users\Shivakumar\capstone project\capstone-project-frontend\transaction\transaction.html" id="events">View Transactions</a>
                     </li>
                     <li class="nav-item ms-10">
-                        <a class="nav-link" href="./createNewEvent.html">Profile</a>
+                        <a class="nav-link" href="C:\Users\Shivakumar\capstone project\capstone-project-frontend\profile\profile.html">Profile</a>
                     </li>
                     <li class="nav-item ms-10">
-                        <a class="nav-link" href="./createNewEvent.html">about Us</a>
+                        <a class="nav-link" href="C:\Users\Shivakumar\capstone project\capstone-project-frontend\about us\aboutus.html">about Us</a>
                     </li>
                     <li class="nav-item ms-10">
-                        <a class="nav-link" href="../../loginpage/login.html">Logout</a>
+                        <a class="nav-link" href="C:\Users\Shivakumar\capstone project\capstone-project-frontend\create user\login.html">Logout</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <h2>Income vs Expenses</h2>
-    <canvas id="myChart"></canvas>
+    <h4>Balance </h4>
+    <h1 class="balance">0.04</h1>
+    <div class="ledger">
+    <div class="inc-exp-container">
+        <div class="inc">
+            <h4>Income</h4>
+            <p id="inc-amt" class="amt-plus">0.65</p>
+        </div>
+        <div class="exp">
+            <h4>Expense</h4>
+            <p id="exp-amt" class="amt-minus">0.04</p>
+        </div>
+    </div>
+</div>
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="createEvent.js"></script>
+    <script src="graph.js"></script>
 </body>
 
 </html>

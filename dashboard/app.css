@@ -1,0 +1,21 @@
+body {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ledger h2,
+.ledger h4,
+.ledger h1{
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.inc-exp-container div{
+    background-color: aliceblue;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px;
+    gap: 25px;
+    flex: 1;
+    border-radius: 2px;
+}
