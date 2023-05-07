@@ -1,21 +1,180 @@
+
+
+  body {
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+  
+  .chart-container {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+  }
+  
+  /* Navbar styles */
+  nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: #f8f8f8;
+  }
+  
+  .navbar-brand {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-image: url("D:/Capstone Project/logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+  }
+  
+  .navbar-nav {
+	display: flex;
+	justify-content: flex-end;
+  }
+  
+  .nav-link {
+	margin-left: 20px;
+	text-decoration: none;
+	color: #db8787;
+	font-weight: bold;
+  }
+  
+  .nav-link:hover {
+	text-decoration: underline;
+  }
+  
+  /* Grid styles */
+  .grid {
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	margin: 20px;
+	padding: 20px;
+  }
+  
+  /* Table styles */
+  #finances {
+	width: 100%;
+	max-height: 400px;
+	overflow-y: scroll;
+  }
+  
+  #finances th, #finances td {
+	padding: 10px;
+	text-align: left;
+	border: 1px solid #ccc;
+	color: #333;
+  }
+  
+  #finances th {
+	background-color: #f8f8f8;
+	font-weight: bold;
+  }
+  
+  
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-    
-    background-repeat: no-repeat;
-    background-size: cover;
+	font-family: sans-serif;
+	background-color: #f2f2f2;
 }
-.ledger h2,
-.ledger h4,
-.ledger h1{
-    font-weight: 600;
-    margin-bottom: 5px;
-    padding: 5px;
+
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem;
 }
-.inc-exp-container div{
-    background-color: aliceblue;
-    text-align: center;
-    text-transform: capitalize;
-    padding: 20px;
-    gap: 25px;
-    flex: 1;
-    border-radius: 2px;
+
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
 }
+
+nav li {
+	margin-right: 1rem;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: absolute;
+grid-gap: 1rem;
+	padding: 2rem;
+  top: 50px;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+  
+#finances {
+	border-collapse: collapse;
+	width: 100%;
+	height: 300px; 
+	overflow-y: scroll;
+  }
+  
+  th, td {
+	text-align: left;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+	background-color: #4CAF50;
+	color: white;
+  }
+  .table-container {
+	height: 280px; /* set the desired height */
+	overflow-y: scroll;
+  }
